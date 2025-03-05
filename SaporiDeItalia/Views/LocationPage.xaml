@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SaporiDeItalia.ViewModels"
+             x:Class="SaporiDeItalia.Views.LocationPage"
+             Title="Location Page">
+    <ContentPage.BindingContext>
+        <vm:LocationViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="Visit Us at:" FontSize="20" FontAttributes="Bold"/>
+        <Label Text="{Binding RestaurantAddress}" FontSize="16" />
+
+        <Image Source="sapori_de_italia.png" HeightRequest="200" Aspect="AspectFill"/>
+
+
+        <Button Text="Open in Maps" Command="{Binding OpenInMapsCommand}" BackgroundColor="Green" TextColor="White"/>
+    </StackLayout>
+</ContentPage>

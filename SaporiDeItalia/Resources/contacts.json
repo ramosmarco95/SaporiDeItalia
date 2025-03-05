@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Deadpool",
+    "Nickname": "D",
+    "ImageUrl": "deadpool.png"
+  },
+  {
+    "Name": "Groot",
+    "Nickname": "G",
+    "ImageUrl": "groot.png"
+  },
+  {
+    "Name": "Iron Man",
+    "Nickname": "IM",
+    "ImageUrl": "iron_man.png"
+  },
+  {
+    "Name": "Thanos",
+    "Nickname": "T",
+    "ImageUrl": "thanos.png"
+  }
+]

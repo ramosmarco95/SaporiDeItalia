@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Margherita Pizza",
+    "Description": "Classic Italian pizza with fresh tomatoes, mozzarella, and basil.",
+    "Price": 12.99
+  },
+  {
+    "Name": "Pasta Carbonara",
+    "Description": "Traditional Italian pasta with pancetta, eggs, and Parmesan cheese.",
+    "Price": 14.99
+  },
+  {
+    "Name": "Tiramisu",
+    "Description": "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.",
+    "Price": 7.99
+  }
+]

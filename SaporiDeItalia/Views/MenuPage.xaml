@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SaporiDeItalia.ViewModels"
+             x:Class="SaporiDeItalia.Views.MenuPage"
+             Title="Menu Page">
+
+    <StackLayout Padding="10">
+        <Button Text="Load Menu" Command="{Binding LoadMenuCommand}" />
+
+        <CollectionView ItemsSource="{Binding MenuItems}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Padding="10" Margin="5" BackgroundColor="White" >
+                        <StackLayout>
+                            <Label Text="{Binding Name}" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="{Binding Description}" FontSize="14" TextColor="Black"/>
+                            <Label Text="{Binding Price, StringFormat='Price: {0:C}'}" FontSize="16" TextColor="Black"/>
+                        </StackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

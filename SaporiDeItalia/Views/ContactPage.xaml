@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SaporiDeItalia.ViewModels"
+             x:Class="SaporiDeItalia.Views.ContactPage"
+             Title="Contacts">
+
+
+    <VerticalStackLayout Padding="20">
+        <Button Text="Load Contacts" Command="{Binding LoadContactsCommand}" />
+
+        <CollectionView ItemsSource="{Binding Contacts}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Padding="10" Margin="5" BackgroundColor="White">
+                        <HorizontalStackLayout Spacing="10">
+                            <Image Source="{Binding ImageUrl}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill"/>
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Name}" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="{Binding Nickname}" FontSize="16" TextColor="Gray"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
