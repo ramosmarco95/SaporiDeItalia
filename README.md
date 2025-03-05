@@ -11,7 +11,7 @@ A .NET MAUI app that showcases a delicious Italian menu, contact details, and lo
 ## Installation
 
 Clone this repository:
-git clone [https://github.com/ramosmarco95/MauiMovies.git](https://github.com/ramosmarco95/SaporiDeItalia.git)
+git clone https://github.com/ramosmarco95/SaporiDeItalia.git
 
 ## Demo Video
 
